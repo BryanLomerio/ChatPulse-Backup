@@ -1,0 +1,98 @@
+.parent-container {
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  height: 100vh;           
+  margin: 0; 
+}
+
+.create-account-form {
+  max-width: 400px;
+  padding: 60px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(45deg, rgba(0,0,0,0.1), rgba(255,255,255,0.1));
+}
+.create-account-form::before, .create-account-form::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 10px;
+  background: linear-gradient(45deg, rgba(0,0,0,0.1), rgba(255,255,255,0.1));
+  z-index: -1;
+}
+.create-account-form h2 {
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  margin-bottom: 30px; 
+}
+
+.create-account-form label {
+  display: block;
+  margin-bottom: 8px;
+  color: white;
+}
+
+.create-account-form input {
+  width: 100%;
+  max-width: 250px; 
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.create-account-form button {
+  width: 100%; 
+  max-width: 250px; 
+  padding: 10px;
+  background-color: rgb(255, 0, 0);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.40s;
+  margin-top: 20px; 
+}
+
+.create-account-form button:hover {
+  background-color: #ac2929;
+}
+
+@media (max-width: 360px) {
+  .create-account-form {
+    padding: 20px;
+    max-width: 100%; 
+  }
+
+  .create-account-form h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .create-account-form input {
+    width: 100%; 
+    max-width: 200px; 
+  }
+
+  .create-account-form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+  }
+
+  .create-account-btn {
+    width: 100%; 
+    max-width: 200px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px; 
+  }
+}
